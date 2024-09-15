@@ -2,8 +2,8 @@ const tables = require("../../database/tables");
 
 const browse = async (req, res, next) => {
   try {
-    const user = await tables.user.readAll();
-    res.json(user);
+    const announce = await tables.announce.readAll();
+    res.json(announce);
   } catch (err) {
     next(err);
   }
@@ -11,11 +11,11 @@ const browse = async (req, res, next) => {
 
 const read = async (req, res, next) => {
   try {
-    const user = await tables.user.read(req.params.id);
-    if (user == null) {
+    const announce = await tables.announce.read(req.params.id);
+    if (announce == null) {
       res.sendStatus(404);
     } else {
-      res.json(user);
+      res.json(announce);
     }
   } catch (error) {
     next(error);
@@ -23,9 +23,9 @@ const read = async (req, res, next) => {
 };
 
 const add = async (req, res, next) => {
-  const user = req.body;
+  const announce = req.body;
   try {
-    const insertId = await tables.user.create(user);
+    const insertId = await tables.announce.create(announce);
 
     res.status(201).json({ insertId });
   } catch (error) {
@@ -35,7 +35,7 @@ const add = async (req, res, next) => {
 
 const destroy = async (req, res, next) => {
   try {
-    await tables.user.delete(req.params.id);
+    await tables.announce.delete(req.params.id);
 
     res.sendStatus(204);
   } catch (err) {
@@ -45,12 +45,11 @@ const destroy = async (req, res, next) => {
 
 const edit = async (req, res, next) => {
   try {
-    const user = { ...req.body, id: Number(req.params.id) };
-    await tables.user.update(user);
+    const announce = { ...req.body, id: Number(req.params.id) };
+    await tables.announce.update(announce);
     res.sendStatus(204);
   } catch (err) {
     next(err);
   }
 };
-
 module.exports = { browse, read, add, destroy, edit };
