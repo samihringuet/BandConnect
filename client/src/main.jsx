@@ -4,11 +4,17 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+import AddAnnounce from "./pages/AddAnnounce";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/AddAnnounce",
+        element: <AddAnnounce />,
+      },
+    ],
   },
 ]);
 
