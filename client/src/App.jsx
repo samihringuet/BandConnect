@@ -3,12 +3,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <div />
-      <main>
-        <Outlet />
-      </main>
-    </div>
+    <main>
+      <Outlet />
+    </main>
   );
 }
 

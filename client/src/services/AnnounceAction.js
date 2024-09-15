@@ -1,7 +1,7 @@
 import { redirect } from "react-router-dom";
 import myAxios from "./myAxios";
 
-const announceaction = async ({ request, params }) => {
+const AnnounceAction = async ({ request, params }) => {
   const formData = await request.formData();
   switch (request.method.toLowerCase()) {
     case "put": {
@@ -36,4 +36,4 @@ const announceaction = async ({ request, params }) => {
   }
 };
 
-export default announceaction;
+export default AnnounceAction;
