@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
-import "./App.css";
+import "./assets/styles/App.css";
+import "./assets/styles/AddAnnounce.css";
 
 function App() {
   return (

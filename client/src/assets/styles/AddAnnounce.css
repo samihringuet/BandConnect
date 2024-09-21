@@ -1,0 +1,62 @@
+body {
+  background-image: url("../images/background2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.AddAnnounce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+  font-family: var(--primary-font);
+}
+.FormAnnounce {
+  background-color: var(--primary-color);
+  margin-top: 7%;
+  border-radius: 4px;
+  color: var(--secondary-color);
+  padding: 2rem;
+  height: 40rem;
+  width: 86%;
+}
+
+.thetitle > span {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.thetitle {
+  color: var(--third-color);
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.createannounce {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.FormAnnounces {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.announcefinished {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.validerlannonce {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+:root {
+  /* color */
+  --primary-color: #1d1d1d;
+  --secondary-color: #d6ff62;
+  --third-color: #fd9a1b;
+
+  /*Font*/
+  --primary-font: "Bebas Neue", sans-serif;
+
+  /*Font-size*/
+  --font-size-one: 1rem;
+  --font-size-two: 1.5rem;
+  --font-size-three: 2rem;
+  --font-size-four: 2.5rem;
+  --font-size-five: 3rem;
+  --font-size-six: 4rem;
+}
+
+button {
+  all: unset;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
