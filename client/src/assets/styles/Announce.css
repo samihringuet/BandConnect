@@ -26,21 +26,20 @@
 }
 
 .findajob {
-  display: flex;
-  justify-content: space-around;
   color: var(--secondary-color);
   font-weight: 400;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
+  margin-right: 5rem;
+  margin-left: 2%;
 }
 
 .pepetes {
-  font-size: 2rem;
-  display: flex;
-  justify-content: flex-end;
+  font-size: 2.5rem;
   color: var(--secondary-color);
   margin-top: -1rem;
   font-weight: 400;
+  margin-left: 2%;
 }
 .lottie-animation {
   width: 220px;
@@ -107,12 +106,10 @@
 
   .findajob {
     font-size: 5rem;
-    margin-right: 80rem;
   }
 
   .pepetes {
     font-size: 4rem;
-    margin-right: 70rem;
     margin-top: -3rem;
     margin-bottom: -2rem;
   }

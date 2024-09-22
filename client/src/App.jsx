@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import "./assets/styles/App.css";
 import "./assets/styles/AddAnnounce.css";
 import "./assets/styles/Announce.css";
+import "./assets/styles/HomePage.css";
 
 function App() {
   useEffect(() => {

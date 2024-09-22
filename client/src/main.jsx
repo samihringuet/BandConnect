@@ -7,13 +7,18 @@ import Announce from "./pages/Announce";
 import App from "./App";
 import AddAnnounce from "./pages/AddAnnounce";
 import AnnounceAction from "./services/AnnounceAction";
+import HomePage from "./pages/HomePage";
 
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
-        path: "announce",
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/announce",
         element: <Announce />,
         loader: AnnounceLoader,
       },
