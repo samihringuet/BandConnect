@@ -5,12 +5,14 @@ export default function AnnounceCard({ announce }) {
   return (
     <div className="cardannounce">
       <div className="cardannounce2" key={announce.id}>
-        <h2 className="announcetitle">
-          <Link to={`/announce/${announce.id}`}>{announce.search_title}</Link>
-        </h2>
-        <li>{announce.user_type}</li>
-        <li>{announce.instrument}</li>
-        <li>{announce.location}</li>
+        <h4 className="announcetitle">
+          <Link className="titleannounce" to={`/announce/${announce.id}`}>
+            {announce.search_title}
+          </Link>
+        </h4>
+        <li>fusionne avec un {announce.user_type}</li>
+        <li> {announce.instrument}</li>
+        <li>tu crêches dans les alentours de {announce.location}</li>
         <li>{announce.description}</li>
         <li>signé {announce.name}</li>
       </div>
