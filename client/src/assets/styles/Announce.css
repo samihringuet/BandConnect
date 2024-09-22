@@ -1,0 +1,79 @@
+.fullannounce {
+  background-image: url("../images/firstbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--primary-font);
+}
+
+.thetitle {
+  color: var(--third-color);
+  font-size: 3.2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+.thetitle > span {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.findajob {
+  display: flex;
+  justify-content: space-around;
+  color: var(--secondary-color);
+  font-weight: 400;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+.pepetes {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--secondary-color);
+  margin-top: -1rem;
+}
+.lottie-animation {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  display: block;
+}
+
+.cardannounce-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.cardannounce2 {
+  width: 300px;
+  height: 300px;
+  background-color: var(--first-grey);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.cardannounce-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.cardannounce-container::-webkit-scrollbar-thumb {
+  background-color: var(--third-color);
+  border-radius: 5px;
+}
