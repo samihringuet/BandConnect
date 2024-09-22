@@ -40,16 +40,16 @@ export default function HomePage() {
           <div className="modal-content">
             <ul>
               <li>
-                <a href="#annonce">Annonce</a>
-              </li>
-              <li>
                 <a href="#mon-compte">Mon compte</a>
               </li>
               <li>
-                <a href="#a-propos">À propos de nous</a>
+                <a href="/addannounce">Publier une annonce</a>
               </li>
               <li>
-                <a href="#avoir">a voir</a>
+                <a href="/announce">Annonce</a>
+              </li>
+              <li>
+                <a href="#a-propos">À propos de nous</a>
               </li>
               <li>
                 <a href="#arevoir">a voir</a>
