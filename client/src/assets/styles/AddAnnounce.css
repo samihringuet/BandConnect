@@ -1,9 +1,10 @@
-body {
+.AddAnnounceBackground {
   background-image: url("../images/background2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100vh; /* Assure que le body prend la hauteur de la fenêtre */
+
   margin: 0;
   padding: 0;
 }
@@ -12,9 +13,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6%;
   font-family: var(--primary-font);
 }
+
 .FormAnnounce {
   background-color: var(--primary-color);
   margin-top: 7%;
@@ -23,16 +24,20 @@ body {
   padding: 2rem;
   height: 40rem;
   width: 86%;
-}
-
-.thetitle > span {
-  color: white;
-  font-size: 3.2rem;
-  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .thetitle {
   color: var(--third-color);
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.thetitle > span {
+  color: white;
   font-size: 3.2rem;
   font-weight: 400;
 }
@@ -53,10 +58,76 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 1.5rem;
+  font-weight: 400;
 }
 
 .validerlannonce {
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  margin: 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.FormAnnounces > input {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+/* Media query pour les écrans de 992px et plus */
+@media (min-width: 992px) {
+  .AddAnnounceBackground {
+    background-position: top;
+    height: 100vh; /* Reste ajusté à la fenêtre */
+    overflow: hidden; /* Empêche le scroll vertical */
+  }
+
+  .AddAnnounce {
+    margin-top: 1%;
+  }
+
+  .FormAnnounce {
+    width: 50rem; /* Ajuste la largeur pour les écrans plus larges */
+    height: auto; /* Ajustement de la hauteur selon le contenu */
+    margin-top: 1%;
+    padding: 2rem;
+  }
+
+  .thetitle {
+    font-size: 5rem; /* Augmenter la taille de la police pour les grands écrans */
+    margin-top: 0;
+  }
+
+  .thetitle > span {
+    font-size: 5rem;
+  }
+
+  .createannounce {
+    font-size: 2.2rem; /* Adapter la taille de la police */
+  }
+
+  .FormAnnounces {
+    gap: 0.5rem; /* Augmenter l'espace entre les éléments */
+    font-size: 1.2rem;
+  }
+
+  .announcefinished {
+    justify-content: center;
+    font-size: 2.2rem; /* Ajuster la taille de la police */
+    margin-bottom: 0.7rem;
+  }
+
+  .validerlannonce {
+    font-size: 1.8rem; /* Augmenter la taille du bouton */
+    width: 50%; /* Ajustement de la largeur du bouton */
+    margin-left: 11.5rem;
+  }
+
+  .FormAnnounces > input,
+  .FormAnnounces > textarea {
+    font-size: 1rem; /* Ajuster la taille de la police des champs */
+  }
 }
