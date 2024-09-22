@@ -6,7 +6,7 @@ export default function Announce() {
 
   return (
     <>
-      <h1>Trouver un job</h1>
+      <h1 className="findajob">Trouver un job</h1>
       {announceData.map((announce) => (
         <AnnounceCard announce={announce} key={announce.id} />
       ))}

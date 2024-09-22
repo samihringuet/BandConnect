@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function AnnounceCard({ announce }) {
   return (
     <ul key={announce.id}>
-      <h2>
+      <h2 className="announcetitle">
         <Link to={`/announce/${announce.id}`}>{announce.search_title}</Link>
       </h2>
-      <li>Vous êtes quoi au juste ? : {announce.user_type}</li>
-      <li>Instrument joués: {announce.instrument}</li>
-      <li>tu crêches ou ?: {announce.location}</li>
-      <li>Racontes en plus hermano: {announce.description}</li>
-      <li>Donne quand meme ton blase: {announce.name}</li>
+      <li>{announce.user_type}</li>
+      <li>{announce.instrument}</li>
+      <li>{announce.location}</li>
+      <li>{announce.description}</li>
+      <li>signé {announce.name}</li>
     </ul>
   );
 }
