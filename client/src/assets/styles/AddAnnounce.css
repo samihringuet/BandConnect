@@ -128,5 +128,6 @@
   .FormAnnounces > input,
   .FormAnnounces > textarea {
     font-size: 0.8rem;
+    height: 2rem;
   }
 }
