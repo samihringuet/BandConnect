@@ -1,0 +1,82 @@
+.homepagetotal {
+  background-image: url("../images/firstbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--primary-font);
+}
+
+.thetitle {
+  color: var(--third-color);
+  font-size: 3.2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+.thetitle > span {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.saveurshow {
+  color: var(--secondary-color);
+  font-weight: 400;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  margin-right: 5rem;
+  margin-left: 2%;
+}
+
+.findurhero {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+  margin-top: -1.5rem;
+  font-weight: 400;
+  margin-left: 2%;
+}
+
+.rockbox {
+  position: relative;
+  background-image: url("../images/halfcard.png");
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 1rem;
+}
+
+.rockoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  padding: 1rem;
+}
+
+.rockoverlay h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 24.5rem;
+  margin-left: 10rem;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.rockoverlay p {
+  margin-top: 0.5rem;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  margin-left: 3rem;
+  line-height: 0.7;
+}
