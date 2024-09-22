@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Assure que le body prend la hauteur de la fenêtre */
+  height: 100vh;
 
   margin: 0;
   padding: 0;
@@ -77,12 +77,11 @@
   border-radius: 4px;
 }
 
-/* Media query pour les écrans de 992px et plus */
 @media (min-width: 992px) {
   .AddAnnounceBackground {
     background-position: top;
-    height: 100vh; /* Reste ajusté à la fenêtre */
-    overflow: hidden; /* Empêche le scroll vertical */
+    height: 100vh;
+    overflow: hidden;
   }
 
   .AddAnnounce {
@@ -90,14 +89,14 @@
   }
 
   .FormAnnounce {
-    width: 50rem; /* Ajuste la largeur pour les écrans plus larges */
-    height: auto; /* Ajustement de la hauteur selon le contenu */
+    width: 50rem;
+    height: auto;
     margin-top: 1%;
     padding: 2rem;
   }
 
   .thetitle {
-    font-size: 5rem; /* Augmenter la taille de la police pour les grands écrans */
+    font-size: 5rem;
     margin-top: 0;
   }
 
@@ -106,28 +105,28 @@
   }
 
   .createannounce {
-    font-size: 2.2rem; /* Adapter la taille de la police */
+    font-size: 2.2rem;
   }
 
   .FormAnnounces {
-    gap: 0.5rem; /* Augmenter l'espace entre les éléments */
+    gap: 0.5rem;
     font-size: 1.2rem;
   }
 
   .announcefinished {
     justify-content: center;
-    font-size: 2.2rem; /* Ajuster la taille de la police */
+    font-size: 2.2rem;
     margin-bottom: 0.7rem;
   }
 
   .validerlannonce {
-    font-size: 1.8rem; /* Augmenter la taille du bouton */
-    width: 50%; /* Ajustement de la largeur du bouton */
+    font-size: 1.8rem;
+    width: 50%;
     margin-left: 11.5rem;
   }
 
   .FormAnnounces > input,
   .FormAnnounces > textarea {
-    font-size: 1rem; /* Ajuster la taille de la police des champs */
+    font-size: 0.8rem;
   }
 }
