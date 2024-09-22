@@ -4,11 +4,8 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  margin: 0;
-  padding: 1rem;
   font-family: var(--primary-font);
 }
-
 .thetitle {
   color: var(--third-color);
   font-size: 3.2rem;
@@ -42,41 +39,118 @@
   margin-left: 2%;
 }
 
+.merguez {
+  margin: 6% 8%;
+}
+
 .rockbox {
-  position: relative;
-  background-image: url("../images/halfcard.png");
-  background-size: contain;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  height: 500px;
-  margin-top: 1rem;
-}
-
-.rockoverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-
-  padding: 1rem;
-}
-
-.rockoverlay h2 {
-  font-size: 1.8rem;
-  margin: 0;
-  margin-bottom: 24.5rem;
-  margin-left: 10rem;
-  color: var(--secondary-color);
-  font-weight: 400;
-}
-
-.rockoverlay p {
-  margin-top: 0.5rem;
-  color: black;
+  background-image: url("../images/fullfullcard.png");
+  background-size: cover;
+  background-position-x: 100%;
+  height: 30rem;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menualone {
+  display: flex;
+  justify-content: flex-end;
+  margin: 6%;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.doublep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-size: 1rem;
-  margin-left: 3rem;
-  line-height: 0.7;
+  margin-right: 2%;
+}
+
+.mulhouse {
+  margin-right: 24%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content li {
+  margin: 1rem 0;
+}
+
+.modal-content a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  font-family: var(--primary-font);
+}
+
+.close-btn {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .saveurshow {
+    font-size: 5rem;
+    line-height: 3rem;
+  }
+
+  .findurhero {
+    font-size: 6rem;
+  }
+
+  .thetitle {
+    font-size: 5rem;
+  }
+
+  .thetitle > span {
+    font-size: 5rem;
+  }
+
+  .merguez {
+    width: 30rem;
+    margin: 0% 38%;
+  }
+
+  .rockbox {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 30rem;
+  }
 }
