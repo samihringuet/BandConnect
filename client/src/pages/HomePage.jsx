@@ -14,7 +14,7 @@ export default function HomePage() {
       </h1>
       <h2 className="saveurshow">SAVE YOUR SHOW</h2>
       <h2 className="findurhero">FIND YOUR HERO</h2>
-      <div className="merguez">
+      <div className="mastercard">
         <div className="rockbox">
           <div className="menualone">
             <button
