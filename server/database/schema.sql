@@ -1,12 +1,16 @@
 create table user (
   id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-  user_type ENUM("musicien", "groupe") NOT NULL,
   mail VARCHAR(155) NOT NULL,
   password VARCHAR(255) NOT NULL,
   first_name VARCHAR(55) NOT NULL,
   last_name VARCHAR(55) NOT NULL,
   country VARCHAR(100) NOT NULL,
-  postal_code INT NOT NULL
+  postal_code INT NOT NULL,
+  instrument VARCHAR(155) NOT NULL,
+  intent_level ENUM("débutant", "confirmé", "expert") NOT NULL,
+  public_performed VARCHAR(155),
+  description TEXT NOT NULL,
+  influences TEXT Not Null
 );
 
 create table announce (
@@ -20,10 +24,10 @@ create table announce (
 );
 
 
-INSERT INTO user (user_type, mail, password, first_name, last_name, country, postal_code)
-VALUES ("musicien", "ramon@gmail.com", "plataoplomo", "ramon", "sanchez", "spain", 45432),
-("groupe", "lestaraudeurs@live.fr", "dzijofzhf", "jean-luc", "delastreet", "france", 20240),
-("musicien", "beber@hotmail.com", "carbocream", "bernard", "grodar", "france", 34654);
+INSERT INTO user (mail, password, first_name, last_name, country, postal_code, instrument, intent_level, public_performed, description, influences)
+VALUES ("ramon@gmail.com", "plataoplomo", "ramon", "sanchez", "spain", 45432, "guitar", "débutant", "je ne me suis jamais produit sur scène", "je suis un guitariste debutant et dispo pour n'importe quoi", "yuri buenaventura est mon père spirituel"),
+("lestaraudeurs@live.fr", "dzijofzhf", "jean-luc", "delastreet", "france", 20240, "batterie", "confirmé", "De nombreux concert durant l'été", "Je suis batteur professionel depuis 13 ans est dispo durant la saison éstival", "Grand fan de nirvana , je pratique la batterie depuis cette époque"),
+("beber@hotmail.com", "carbocream", "bernard", "grodar", "france", 34654, "saxophne et trompette", "expert", "J'étais membre de la choral des furieux de mulhouse, j'ai pu participé à de nombreux évenement en public", "Actuellement à la recherche d'un groupe pour me produire de manière ponctuel le week-end exclusiement", "J'aime beaucoup ce que fait aujourd'hui Jimmy Sax" );
 
 INSERT INTO announce (search_title, user_type, instrument, location, description, name)
 VALUES ("LF GUITAR HERO", "groupe", "guitare electrique", "nouillorc", "Nous recherchons un guitariste pour notre groupe , si possible qui aime faire hurler son materiel et s'arracher les phalanges", "POO ON SYSTEM"),
