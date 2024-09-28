@@ -16,11 +16,21 @@ create table user (
 create table announce (
   id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
   search_title VARCHAR(155) NOT NULL,
-  user_type ENUM("musicien", "groupe") NOT NULL,
   instrument VARCHAR(155) NOT NULL,
   location VARCHAR(155) NOT NULL,
   description TEXT NOT NULL,
   name VARCHAR(55) NOT NULL
+);
+
+create table band (
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  stage_name VARCHAR(55) not null,
+  date_creation VARCHAR(25),
+  intent_level ENUM("débutant", "confirmé", "expert", "professionel") NOT NULL,
+  public_performed VARCHAR(155),
+  description TEXT NOT NULL,
+  styles TEXT,
+  influences TEXT Not Null
 );
 
 
@@ -29,7 +39,11 @@ VALUES ("ramon@gmail.com", "plataoplomo", "ramon", "sanchez", "spain", 45432, "g
 ("lestaraudeurs@live.fr", "dzijofzhf", "jean-luc", "delastreet", "france", 20240, "batterie", "confirmé", "De nombreux concert durant l'été", "Je suis batteur professionel depuis 13 ans est dispo durant la saison éstival", "Grand fan de nirvana , je pratique la batterie depuis cette époque"),
 ("beber@hotmail.com", "carbocream", "bernard", "grodar", "france", 34654, "saxophne et trompette", "expert", "J'étais membre de la choral des furieux de mulhouse, j'ai pu participé à de nombreux évenement en public", "Actuellement à la recherche d'un groupe pour me produire de manière ponctuel le week-end exclusiement", "J'aime beaucoup ce que fait aujourd'hui Jimmy Sax" );
 
-INSERT INTO announce (search_title, user_type, instrument, location, description, name)
-VALUES ("LF GUITAR HERO", "groupe", "guitare electrique", "nouillorc", "Nous recherchons un guitariste pour notre groupe , si possible qui aime faire hurler son materiel et s'arracher les phalanges", "POO ON SYSTEM"),
-("à la recherche d'un batteur", "groupe", "batterie", "los argeles", "si tu aimes tabasser ta batterie et uniquement ta batterie, tu es le bienvenue", "kawapunka"),
-("seek groupe latino", "musicien", "guitar", "lens", "chaud et dispo pour faire danser de la latine enervé", "johnny gimenez")
+INSERT INTO announce (search_title, instrument, location, description, name)
+VALUES ("LF GUITAR HERO", "guitare electrique", "nouillorc", "Nous recherchons un guitariste pour notre groupe , si possible qui aime faire hurler son materiel et s'arracher les phalanges", "POO ON SYSTEM"),
+("à la recherche d'un batteur", "batterie", "los argeles", "si tu aimes tabasser ta batterie et uniquement ta batterie, tu es le bienvenue", "kawapunka"),
+("seek groupe latino", "guitar", "lens", "chaud et dispo pour faire danser de la latine enervé", "johnny gimenez");
+
+INSERT INTO band (stage_name, date_creation, intent_level, public_performed, description, styles, influences)
+VALUES ("BIG CROTE ON WALL STREET", "2006", "professionel", "En tournée permanente", "Sex Drogue et rock n roll sans le sex malheureusement", "Hard rock", "N'importe quel groupe de hard qui se lave pas tout les jours !"),
+("Saveur latine", "2014", "confirmé", "Seulement l'été", "La magie de faire danser les corps jusqu'à ce que du feu apparaisse", "batchata", "Dans la lignée d'aventura");
