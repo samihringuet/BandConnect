@@ -10,8 +10,8 @@ export default function AnnounceCard({ announce }) {
             {announce.search_title}
           </Link>
         </h4>
-        <li> {announce.instrument}</li>
-        <li>tu es dans les alentours de {announce.location}</li>
+        <li>{announce.instrument}</li>
+        <li>{announce.location}</li>
         <li>{announce.description}</li>
         <li>{announce.name}</li>
       </div>
