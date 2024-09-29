@@ -7,7 +7,6 @@ const AnnounceAction = async ({ request, params }) => {
     case "put": {
       await myAxios.put(`/api/announce/${params.id}`, {
         search_title: formData.get("search_title"),
-        user_type: formData.get("user_type"),
         instrument: formData.get("instrument"),
         location: formData.get("location"),
         description: formData.get("description"),
@@ -18,7 +17,6 @@ const AnnounceAction = async ({ request, params }) => {
     case "post": {
       await myAxios.post("/api/announce", {
         search_title: formData.get("search_title"),
-        user_type: formData.get("user_type"),
         instrument: formData.get("instrument"),
         location: formData.get("location"),
         description: formData.get("description"),

@@ -42,7 +42,7 @@ VALUES ("ramon@gmail.com", "plataoplomo", "ramon", "sanchez", "spain", 45432, "g
 INSERT INTO announce (search_title, instrument, location, description, name)
 VALUES ("LF GUITAR HERO", "guitare electrique", "nouillorc", "Nous recherchons un guitariste pour notre groupe , si possible qui aime faire hurler son materiel et s'arracher les phalanges", "POO ON SYSTEM"),
 ("à la recherche d'un batteur", "batterie", "los argeles", "si tu aimes tabasser ta batterie et uniquement ta batterie, tu es le bienvenue", "kawapunka"),
-("seek groupe latino", "guitar", "lens", "chaud et dispo pour faire danser de la latine enervé", "johnny gimenez");
+("Nous recherchons un guitariste", "guitar", "lens", "si tu es chaud et dispo pour faire danser de la latine enervé", "Calor max");
 
 INSERT INTO band (stage_name, date_creation, intent_level, public_performed, description, styles, influences)
 VALUES ("BIG CROTE ON WALL STREET", "2006", "professionel", "En tournée permanente", "Sex Drogue et rock n roll sans le sex malheureusement", "Hard rock", "N'importe quel groupe de hard qui se lave pas tout les jours !"),

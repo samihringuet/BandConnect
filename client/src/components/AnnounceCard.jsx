@@ -10,11 +10,10 @@ export default function AnnounceCard({ announce }) {
             {announce.search_title}
           </Link>
         </h4>
-        <li>fusionne avec un {announce.user_type}</li>
         <li> {announce.instrument}</li>
-        <li>tu crêches dans les alentours de {announce.location}</li>
+        <li>tu es dans les alentours de {announce.location}</li>
         <li>{announce.description}</li>
-        <li>signé {announce.name}</li>
+        <li>{announce.name}</li>
       </div>
     </div>
   );
@@ -25,7 +24,6 @@ AnnounceCard.propTypes = {
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       search_title: PropTypes.string.isRequired,
-      user_type: PropTypes.string.isRequired,
       instrument: PropTypes.string.isRequired,
       location: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
