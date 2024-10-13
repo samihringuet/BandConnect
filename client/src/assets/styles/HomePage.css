@@ -60,6 +60,7 @@
   margin: 6%;
   color: var(--secondary-color);
   font-size: 1.8rem;
+  text-shadow: 1px 1px 7px black;
 }
 
 .doublep {

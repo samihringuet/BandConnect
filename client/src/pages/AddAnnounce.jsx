@@ -8,9 +8,12 @@ function AddAnnounce() {
         <h1 className="thetitle">
           <span>Band</span>⚡Connect
         </h1>
-        <Form className="FormAnnounce" method="post">
+        <Form
+          className="FormAnnounce"
+          method="post"
+          encType="multipart/form-data"
+        >
           <FormAnnounce />
-          <h3 className="announcefinished">Votre annonce est terminé ?</h3>
           <button className="validerlannonce" type="submit">
             Valider l'annonce
           </button>

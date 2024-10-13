@@ -19,7 +19,8 @@ create table announce (
   instrument VARCHAR(155) NOT NULL,
   location VARCHAR(155) NOT NULL,
   description TEXT NOT NULL,
-  name VARCHAR(55) NOT NULL
+  name VARCHAR(55) NOT NULL, 
+  image TEXT
 );
 
 create table band (
@@ -39,10 +40,10 @@ VALUES ("ramon@gmail.com", "plataoplomo", "ramon", "sanchez", "spain", 45432, "g
 ("lestaraudeurs@live.fr", "dzijofzhf", "jean-luc", "delastreet", "france", 20240, "batterie", "confirmé", "De nombreux concert durant l'été", "Je suis batteur professionel depuis 13 ans est dispo durant la saison éstival", "Grand fan de nirvana , je pratique la batterie depuis cette époque"),
 ("beber@hotmail.com", "carbocream", "bernard", "grodar", "france", 34654, "saxophne et trompette", "expert", "J'étais membre de la choral des furieux de mulhouse, j'ai pu participé à de nombreux évenement en public", "Actuellement à la recherche d'un groupe pour me produire de manière ponctuel le week-end exclusiement", "J'aime beaucoup ce que fait aujourd'hui Jimmy Sax" );
 
-INSERT INTO announce (search_title, instrument, location, description, name)
-VALUES ("LF GUITAR HERO", "guitare electrique", "nouillorc", "Nous recherchons un guitariste pour notre groupe , si possible qui aime faire hurler son materiel et s'arracher les phalanges", "POO ON SYSTEM"),
-("à la recherche d'un batteur", "batterie", "los argeles", "si tu aimes tabasser ta batterie et uniquement ta batterie, tu es le bienvenue", "kawapunka"),
-("Nous recherchons un guitariste", "guitar", "lens", "si tu es chaud et dispo pour faire danser de la latine enervé", "Calor max");
+INSERT INTO announce (search_title, instrument, location, description, name, image)
+VALUES ("LF GUITAR HERO", "Guitare Electrique", "Nouillorc", "Viens t'allumer les phalanges", "POO ON SYSTEM", "test.png"),
+("à la recherche d'un batteur", "Batterie", "los argeles", "si tu aimes tabasser ta batterie et uniquement ta batterie, tu es le bienvenue", "TROLLING STONE", "test.png"),
+("un Percutioniste", "Darbuka", "Boulogne-sur-mer", "si tu es chaud et dispo pour faire danser de la latine onfire", "CALOR ULTIMA", "test.png");
 
 INSERT INTO band (stage_name, date_creation, intent_level, public_performed, description, styles, influences)
 VALUES ("BIG CROTE ON WALL STREET", "2006", "professionel", "En tournée permanente", "Sex Drogue et rock n roll sans le sex malheureusement", "Hard rock", "N'importe quel groupe de hard qui se lave pas tout les jours !"),

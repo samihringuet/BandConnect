@@ -12,6 +12,13 @@ export default function FormAnnounce() {
       <textarea name="description" required />
       <label htmlFor="name">Nom </label>
       <input name="name" type="text" required />
+      <label htmlFor="image">the band</label>
+      <input
+        id="image"
+        name="image"
+        type="file"
+        accept=".doc, .docx, .pdf, .jpg, .jpeg, .png"
+      />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import "./assets/styles/App.css";
 import "./assets/styles/AddAnnounce.css";
 import "./assets/styles/Announce.css";
 import "./assets/styles/HomePage.css";
+import "./assets/styles/EditAnnounce.css";
+import "./assets/styles/AnnounceDetail.css";
 
 function App() {
   useEffect(() => {
