@@ -51,9 +51,6 @@ export default function HomePage() {
               <li>
                 <a href="#a-propos">À propos de nous</a>
               </li>
-              <li>
-                <a href="#arevoir">a voir</a>
-              </li>
             </ul>
             <button type="button" className="close-btn" onClick={toggleModal}>
               ✖
