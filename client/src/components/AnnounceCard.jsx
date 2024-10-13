@@ -15,7 +15,10 @@ export default function AnnounceCard({ announce }) {
           {announce.location} !
         </li>
         <li>{announce.description}</li>
-        <li>{announce.name} t 'attendent !</li>
+        <li>{announce.name} à besoin de toi !</li>
+        <Link to={`/announce/${announce.id}/edit`}>
+          <button type="submit">⚙️</button>
+        </Link>
         <img
           className="imageband"
           src={`${import.meta.env.VITE_API_URL}/uploads/${announce.image}`}

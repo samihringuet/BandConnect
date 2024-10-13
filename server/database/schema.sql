@@ -41,9 +41,15 @@ VALUES ("ramon@gmail.com", "plataoplomo", "ramon", "sanchez", "spain", 45432, "g
 ("beber@hotmail.com", "carbocream", "bernard", "grodar", "france", 34654, "saxophne et trompette", "expert", "J'étais membre de la choral des furieux de mulhouse, j'ai pu participé à de nombreux évenement en public", "Actuellement à la recherche d'un groupe pour me produire de manière ponctuel le week-end exclusiement", "J'aime beaucoup ce que fait aujourd'hui Jimmy Sax" );
 
 INSERT INTO announce (search_title, instrument, location, description, name, image)
-VALUES ("LF GUITAR HERO", "Guitare Electrique", "Nouillorc", "Viens t'allumer les phalanges", "POO ON SYSTEM", "test.png"),
-("à la recherche d'un batteur", "Batterie", "los argeles", "si tu aimes tabasser ta batterie et uniquement ta batterie, tu es le bienvenue", "TROLLING STONE", "test.png"),
-("un Percutioniste", "Darbuka", "Boulogne-sur-mer", "si tu es chaud et dispo pour faire danser de la latine onfire", "CALOR ULTIMA", "test.png");
+VALUES ("LF GUITAR HERO", "Guitare Electrique", "Nouillorc", "Viens t'allumer les phalanges", "POO ON SYSTEM", "metal.png"),
+       ("à la recherche d'un batteur", "Batterie", "Los Argeles", "Viens tabasser ta batterie et uniquement ta batterie", "TROLLING STONEZ", "rock.png"),
+       ("un Percutioniste", "Darbuka", "Boulogne-sur-mer", "Si tu es chaud et dispo pour faire danser de la latine onfire", "CALOR ULTIMA", "latino.png"),
+       ("Besoin URGENT", "saxophoniste", "Marseille", "si tu es dispo pour un Concert le 11 décembre", "PRIVATE TEACHER", "accoustic.png"),
+       ("Hi cow boy", "Harmonica", "Rennes", "Besoin d'un joueur d'harmonica pour la saison 2025", "NRA LOVERS", "country.png"),
+       ("Tournée en Louisiane", "Trompette", "Lafayette", "6 mois en tournée en Louisiane et possibilité de visa", "CAJUN SPICES", "jazz.png"),
+       ("Festival lover", "Tuba", "Metz", "Amateur de festival rejoins-nous", "FOHK BABYLONE", "psy.png"),
+       ("Rock californien", "Basse", "Lilles", "On n'est pas payé mais on rigole bien", "ANARSHIT", "test.png");
+
 
 INSERT INTO band (stage_name, date_creation, intent_level, public_performed, description, styles, influences)
 VALUES ("BIG CROTE ON WALL STREET", "2006", "professionel", "En tournée permanente", "Sex Drogue et rock n roll sans le sex malheureusement", "Hard rock", "N'importe quel groupe de hard qui se lave pas tout les jours !"),

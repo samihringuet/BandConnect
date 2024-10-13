@@ -46,7 +46,7 @@ export default function HomePage() {
                 <a href="/addannounce">Publier une annonce</a>
               </li>
               <li>
-                <a href="/announce">Annonce</a>
+                <a href="/announce">Annonces</a>
               </li>
               <li>
                 <a href="#a-propos">À propos de nous</a>
